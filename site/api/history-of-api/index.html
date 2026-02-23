@@ -1,0 +1,807 @@
+<!--
+  ---------------------------------------------------------------
+  docmd : the minimalist, zero-config documentation generator.
+  @website https://docmd.io
+  [docmd-source] - Please do not remove this header.
+  ---------------------------------------------------------------
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="generator" content="docmd v0.4.x">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Define Globals -->
+    <script>
+        var root = "../../";
+        if (root && !root.endsWith('/')) root += '/';
+        if (root === '') root = './';
+        window.DOCMD_ROOT = root;
+        window.DOCMD_DEFAULT_MODE = "system";
+    </script>
+
+    <title>A Brief History of APIs</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../../assets/favicon.ico?v=mlz98oxf" type="image/x-icon" sizes="any">
+<link rel="shortcut icon" href="../../assets/favicon.ico?v=mlz98oxf" type="image/x-icon">
+    
+    <!-- 1. CORE STYLES (Foundation) -->
+    <link rel="stylesheet" href="../../assets/css/docmd-main.css?v=mlz98oxf">
+
+    <!-- 2. HIGHLIGHT.JS (Toggle Strategy) -->
+    
+    <link rel="stylesheet" 
+          href="../../assets/css/docmd-highlight-light.css?v=mlz98oxf" 
+          id="hljs-light" 
+          >
+          
+    <link rel="stylesheet" 
+          href="../../assets/css/docmd-highlight-dark.css?v=mlz98oxf" 
+          id="hljs-dark" 
+          disabled>
+    
+
+    <!-- 3. PLUGINS & THEMES (Overrides Core) -->
+    <!-- This includes 'docmd-theme-sky.css' injected by build.js -->
+    <meta name="description" content="Documentation built with docmd.">
+<link rel="canonical" href="/api\history-of-api/">
+<meta property="og:title" content="A Brief History of APIs : My Documentation">
+<meta property="og:description" content="Documentation built with docmd.">
+<meta property="og:url" content="/api\history-of-api/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="A Brief History of APIs">
+<meta name="twitter:description" content="Documentation built with docmd.">
+
+
+    <!-- GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X9WTDL262N"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X9WTDL262N');
+    </script>
+
+
+
+    <!-- 4. CUSTOM CSS (Overrides Everything) -->
+    
+
+    <!-- Theme Init Script (Must be after styles to prevent FOUC) -->
+    <script>/**
+ * --------------------------------------------------------------------
+ * docmd : the minimalist, zero-config documentation generator.
+ *
+ * @package     @docmd/core (and ecosystem)
+ * @website     https://docmd.io
+ * @repository  https://github.com/docmd-io/docmd
+ * @license     MIT
+ * @copyright   Copyright (c) 2025 docmd.io
+ *
+ * [docmd-source] - Please do not remove this header.
+ * --------------------------------------------------------------------
+ */
+
+(function() {
+  try {
+    // 1. Determine Theme
+    var localValue = localStorage.getItem('docmd-theme');
+    var configValue = window.DOCMD_DEFAULT_MODE || 'light'; 
+    var theme = localValue ? localValue : configValue;
+    
+    if (theme === 'system') {
+      theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+
+    // 2. Apply to Root
+    document.documentElement.setAttribute('data-theme', theme);
+    
+    // 3. Highlight.js Toggle Strategy
+    var lightLink = document.getElementById('hljs-light');
+    var darkLink = document.getElementById('hljs-dark');
+    
+    if (lightLink && darkLink) {
+        if (theme === 'dark') {
+            lightLink.disabled = true;
+            darkLink.disabled = false;
+        } else {
+            lightLink.disabled = false;
+            darkLink.disabled = true;
+        }
+    }
+
+  } catch (e) {
+    console.error('Theme init failed', e);
+  }
+})();</script>
+</head>
+<body class="sidebar-not-collapsible" 
+      data-default-collapsed="" 
+      data-copy-code-enabled="true">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            
+            <a href="./" class="logo-link">
+                <img src="../../assets/images/docmd-logo-dark.png" alt="Logo" class="logo-light" >
+                <img src="../../assets/images/docmd-logo-light.png" alt="Logo" class="logo-dark" >
+            </a>
+            
+            <span class="mobile-view sidebar-menu-button float-right">
+                
+<svg class="lucide-icon icon-ellipsis-vertical " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+  class="lucide lucide-ellipsis-vertical"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="1" />
+  <circle cx="12" cy="5" r="1" />
+  <circle cx="12" cy="19" r="1" />
+</svg>
+
+            </span>
+        </div>
+
+        
+
+<nav class="sidebar-nav" aria-label="Main Navigation">
+  <ul>
+    
+    <li class="" >
+      <a href="../../" class="" >
+         
+<svg class="lucide-icon icon-home " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+  class="lucide lucide-house"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+  <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+</svg>
+ 
+        <span class="nav-item-title">Introduction</span>
+        
+        
+        
+        
+      </a>
+      
+      
+    </li>
+    
+    <li class="collapsible"  aria-expanded="false" >
+      <a href="../../api" class="" >
+         
+<svg class="lucide-icon icon-book-open " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+  class="lucide lucide-book-open"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 7v14" />
+  <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" />
+</svg>
+ 
+        <span class="nav-item-title">API</span>
+        
+         
+            <span class="collapse-icon-wrapper">
+                
+<svg class="lucide-icon icon-chevron-right collapse-icon" width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+  class="lucide lucide-chevron-right"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m9 18 6-6-6-6" />
+</svg>
+ 
+            </span>
+        
+        
+        
+      </a>
+      
+      
+        <ul class="submenu">
+          
+    <li class="" >
+      <a href="../../api/history-of-apis" class="" >
+         
+<svg class="lucide-icon icon-book-open " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+  class="lucide lucide-book-open"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 7v14" />
+  <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" />
+</svg>
+ 
+        <span class="nav-item-title">History of APIs</span>
+        
+        
+        
+        
+      </a>
+      
+      
+    </li>
+    
+        </ul>
+      
+    </li>
+    
+    <li class="collapsible"  aria-expanded="false" >
+      <a href="#" class="" >
+         
+<svg class="lucide-icon icon-book-open " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+  class="lucide lucide-book-open"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 7v14" />
+  <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" />
+</svg>
+ 
+        <span class="nav-item-title">Guide</span>
+        
+         
+            <span class="collapse-icon-wrapper">
+                
+<svg class="lucide-icon icon-chevron-right collapse-icon" width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+  class="lucide lucide-chevron-right"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m9 18 6-6-6-6" />
+</svg>
+ 
+            </span>
+        
+        
+        
+      </a>
+      
+      
+        <ul class="submenu">
+          
+    <li class="" >
+      <a href="https://docs.docmd.io/getting-started/installation" class="" target=&#34;_blank&#34; rel=&#34;noopener&#34;>
+         
+<svg class="lucide-icon icon-rocket " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+  class="lucide lucide-rocket"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+  <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
+  <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
+  <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+</svg>
+ 
+        <span class="nav-item-title">Getting Started</span>
+        
+        
+        
+         
+<svg class="lucide-icon icon-external-link nav-external-icon" width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+  class="lucide lucide-external-link"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M15 3h6v6" />
+  <path d="M10 14 21 3" />
+  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+</svg>
+ 
+      </a>
+      
+      
+    </li>
+    
+    <li class="" >
+      <a href="https://docs.docmd.io/configuration" class="" target=&#34;_blank&#34; rel=&#34;noopener&#34;>
+         
+<svg class="lucide-icon icon-settings " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+  class="lucide lucide-settings"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915" />
+  <circle cx="12" cy="12" r="3" />
+</svg>
+ 
+        <span class="nav-item-title">Configuration</span>
+        
+        
+        
+         
+<svg class="lucide-icon icon-external-link nav-external-icon" width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+  class="lucide lucide-external-link"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M15 3h6v6" />
+  <path d="M10 14 21 3" />
+  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+</svg>
+ 
+      </a>
+      
+      
+    </li>
+    
+        </ul>
+      
+    </li>
+    
+    <li class="" >
+      <a href="https://live.docmd.io" class="" target=&#34;_blank&#34; rel=&#34;noopener&#34;>
+         
+<svg class="lucide-icon icon-pencil-ruler " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+  class="lucide lucide-pencil-ruler"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M13 7 8.7 2.7a2.41 2.41 0 0 0-3.4 0L2.7 5.3a2.41 2.41 0 0 0 0 3.4L7 13" />
+  <path d="m8 6 2-2" />
+  <path d="m18 16 2-2" />
+  <path d="m17 11 4.3 4.3c.94.94.94 2.46 0 3.4l-2.6 2.6c-.94.94-2.46.94-3.4 0L11 17" />
+  <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" />
+  <path d="m15 5 4 4" />
+</svg>
+ 
+        <span class="nav-item-title">Live Editor</span>
+        
+        
+        
+         
+<svg class="lucide-icon icon-external-link nav-external-icon" width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+  class="lucide lucide-external-link"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M15 3h6v6" />
+  <path d="M10 14 21 3" />
+  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+</svg>
+ 
+      </a>
+      
+      
+    </li>
+    
+    <li class="" >
+      <a href="https://github.com/docmd-io/docmd" class="" target=&#34;_blank&#34; rel=&#34;noopener&#34;>
+         
+<svg class="lucide-icon icon-github " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+  class="lucide lucide-github"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+  <path d="M9 18c-4.51 2-5-2-7-2" />
+</svg>
+ 
+        <span class="nav-item-title">GitHub</span>
+        
+        
+        
+         
+<svg class="lucide-icon icon-external-link nav-external-icon" width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+  class="lucide lucide-external-link"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M15 3h6v6" />
+  <path d="M10 14 21 3" />
+  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+</svg>
+ 
+      </a>
+      
+      
+    </li>
+    
+  </ul>
+</nav>
+
+        
+    </aside>
+
+    <div class="main-content-wrapper">
+        <div class="page-header">
+            <div class="header-left">
+                
+                <h1>A Brief History of APIs</h1>
+            </div>
+            
+            <div class="header-right">
+
+                <!-- SEARCH BUTTON -->
+                
+                <button class="docmd-search-trigger" aria-label="Search">
+                    
+<svg class="lucide-icon icon-search " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+  class="lucide lucide-search"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m21 21-4.34-4.34" />
+  <circle cx="11" cy="11" r="8" />
+</svg>
+
+                    <span class="search-label">Search</span>
+                    <span class="search-keys"><kbd class="docmd-kbd">⌘</kbd><kbd class="docmd-kbd">k</kbd></span>
+                </button>
+                
+
+                <!-- THEME TOGGLE -->
+                <button id="theme-toggle-button" aria-label="Toggle theme" class="theme-toggle-button theme-toggle-header">
+                    
+<svg class="lucide-icon icon-sun icon-sun" width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+  class="lucide lucide-sun"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="4" />
+  <path d="M12 2v2" />
+  <path d="M12 20v2" />
+  <path d="m4.93 4.93 1.41 1.41" />
+  <path d="m17.66 17.66 1.41 1.41" />
+  <path d="M2 12h2" />
+  <path d="M20 12h2" />
+  <path d="m6.34 17.66-1.41 1.41" />
+  <path d="m19.07 4.93-1.41 1.41" />
+</svg>
+ 
+<svg class="lucide-icon icon-moon icon-moon" width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+  class="lucide lucide-moon"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" />
+</svg>
+
+                </button>
+
+                <!-- SPONSOR BUTTON -->
+                
+            </div>
+            
+        </div>
+
+        <main class="content-area" id="main-content">
+            <div class="content-layout">
+                <div class="main-content">
+                    <h1 id="a-brief-history-of-apis">A Brief History of APIs</h1>
+<h2 id="introduction">Introduction</h2>
+<p>The concept of an <strong>Application Programming Interface (API)</strong> has evolved alongside the history of computing itself. While the term “API” became popular in the late 20th century, the underlying idea—allowing software components to communicate through well-defined interfaces—has existed since the earliest days of software engineering. This article traces the historical development of APIs from early computing to modern web-based systems.</p>
+<h2 id="early-computing-and-procedural-interfaces-1960s1970s">Early Computing and Procedural Interfaces (1960s–1970s)</h2>
+<p>In the early era of mainframe computing, software was tightly coupled to hardware. Programs interacted directly with operating systems through <strong>system calls</strong>, which can be considered some of the earliest forms of APIs. These interfaces allowed applications to request services such as memory allocation or file access without needing to manage hardware directly.<br>
+As programming languages like C emerged, standardized libraries (for example, the C standard library) provided reusable functions, reinforcing the idea of defined interfaces between software components.</p>
+<h2 id="operating-systems-and-library-apis-1980s">Operating Systems and Library APIs (1980s)</h2>
+<p>During the 1980s, personal computers and graphical user interfaces became widespread. Operating systems such as UNIX and later Microsoft Windows exposed extensive APIs that developers could use to build applications.<br>
+These APIs standardized how software interacted with the operating system, enabling a growing ecosystem of third-party applications and accelerating software innovation.</p>
+<h2 id="object-oriented-and-enterprise-apis-1990s">Object-Oriented and Enterprise APIs (1990s)</h2>
+<p>With the rise of object-oriented programming, APIs expanded beyond simple function calls to include classes, methods, and interfaces. Technologies such as Java APIs and Component Object Model (COM) allowed developers to build modular and reusable software components.<br>
+At the same time, enterprise systems began exposing APIs to integrate databases, middleware, and business applications across large organizations.</p>
+<h2 id="web-apis-and-the-internet-era-2000s">Web APIs and the Internet Era (2000s)</h2>
+<p>The widespread adoption of the internet fundamentally changed APIs. Web services enabled communication between systems over HTTP, regardless of platform or programming language.<br>
+A major milestone was the introduction of REST (Representational State Transfer), formally described by <strong>Roy Fielding</strong> in his 2000 doctoral dissertation. REST principles influenced the design of modern web APIs, emphasizing stateless communication, resource-based URLs, and standard HTTP methods.</p>
+<h2 id="modern-apis-and-cloud-computing-2010spresent">Modern APIs and Cloud Computing (2010s–Present)</h2>
+<p>In the last decade, APIs have become the backbone of cloud computing, microservices, and mobile applications. Public APIs from major technology companies allow developers worldwide to access services such as payments, mapping, messaging, and artificial intelligence.<br>
+Modern API styles now include REST, GraphQL, and event-driven APIs, enabling highly scalable and distributed systems.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>From early system calls to modern cloud-based web services, APIs have continually evolved to meet the needs of increasingly complex software systems. Today, APIs are not just technical tools but strategic assets that enable interoperability, platform ecosystems, and rapid innovation in the digital economy.</p>
+<hr>
+<h2 id="sources">Sources</h2>
+<ol>
+<li>Fielding, R. T. (2000). <em>Architectural Styles and the Design of Network-based Software Architectures</em>. Doctoral Dissertation, University of California, Irvine.</li>
+<li>Bloch, J. (2006). <em>How to Design a Good API and Why It Matters</em>. Proceedings of the ACM.</li>
+<li>Tanenbaum, A. S., &amp; Bos, H. (2015). <em>Modern Operating Systems</em> (4th ed.). Pearson.</li>
+<li>Red Hat. <em>What is an API?</em> (Introductory and historical overview article).</li>
+<li>IBM Documentation. <em>API Concepts and History</em>.</li>
+</ol>
+
+
+                    
+                    <div class="page-navigation">
+                        <div class="prev-page-placeholder"></div>
+                        
+                        <a href="../../" class="next-page">
+                            <span><small>Next</small><strong>Introduction</strong></span>
+                            
+<svg class="lucide-icon icon-arrow-right page-nav-icon" width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+  class="lucide lucide-arrow-right"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" />
+</svg>
+
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="toc-sidebar">
+                    
+
+
+  <div class="toc-container">
+    <h2 class="toc-title">On This Page<span class="mobile-view toc-menu-button float-right">
+<svg class="lucide-icon icon-chevrons-down-up " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+  class="lucide lucide-chevrons-down-up"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m7 20 5-5 5 5" />
+  <path d="m7 4 5 5 5-5" />
+</svg>
+</span></h2>
+    <ul class="toc-list">
+      
+        <li class="toc-item toc-level-2">
+          <a href="#introduction" class="toc-link">Introduction</a>
+        </li>
+      
+        <li class="toc-item toc-level-2">
+          <a href="#early-computing-and-procedural-interfaces-1960s1970s" class="toc-link">Early Computing and Procedural Interfaces (1960s–1970s)</a>
+        </li>
+      
+        <li class="toc-item toc-level-2">
+          <a href="#operating-systems-and-library-apis-1980s" class="toc-link">Operating Systems and Library APIs (1980s)</a>
+        </li>
+      
+        <li class="toc-item toc-level-2">
+          <a href="#object-oriented-and-enterprise-apis-1990s" class="toc-link">Object-Oriented and Enterprise APIs (1990s)</a>
+        </li>
+      
+        <li class="toc-item toc-level-2">
+          <a href="#web-apis-and-the-internet-era-2000s" class="toc-link">Web APIs and the Internet Era (2000s)</a>
+        </li>
+      
+        <li class="toc-item toc-level-2">
+          <a href="#modern-apis-and-cloud-computing-2010spresent" class="toc-link">Modern APIs and Cloud Computing (2010s–Present)</a>
+        </li>
+      
+        <li class="toc-item toc-level-2">
+          <a href="#conclusion" class="toc-link">Conclusion</a>
+        </li>
+      
+        <li class="toc-item toc-level-2">
+          <a href="#sources" class="toc-link">Sources</a>
+        </li>
+      
+    </ul>
+  </div>
+
+                </div>
+            </div>
+
+            <div class="page-footer-actions">
+                
+            </div>
+        </main>
+
+        <footer class="page-footer">
+            <div class="footer-content">
+                <div class="user-footer">© 2026 My Project. Built with <a href="https://docmd.io">docmd</a>.</div>
+                <div class="branding-footer">
+                    Build with <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"></path><path d="m18 15-2-2"></path><path d="m15 18-2-2"></path></svg> <a href="https://docmd.io" target="_blank" rel="noopener">docmd.</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    
+    <!-- Search Modal -->
+    <div id="docmd-search-modal" class="docmd-search-modal" style="display: none;">
+        <div class="docmd-search-box">
+            <div class="docmd-search-header">
+                
+<svg class="lucide-icon icon-search " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+  class="lucide lucide-search"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m21 21-4.34-4.34" />
+  <circle cx="11" cy="11" r="8" />
+</svg>
+
+                <input type="text" id="docmd-search-input" placeholder="Search documentation..." autocomplete="off" spellcheck="false">
+                <button onclick="window.closeDocmdSearch()" class="docmd-search-close" aria-label="Close search">
+                    
+<svg class="lucide-icon icon-x " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+  class="lucide lucide-x"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M18 6 6 18" />
+  <path d="m6 6 12 12" />
+</svg>
+
+                </button>
+            </div>
+            <div id="docmd-search-results" class="docmd-search-results"></div>
+            <div class="docmd-search-footer">
+                <span><kbd class="docmd-kbd">↑</kbd> <kbd class="docmd-kbd">↓</kbd> to navigate</span>
+                <span><kbd class="docmd-kbd">ESC</kbd> to close</span>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- CORE JS -->
+    <script src="../../assets/js/docmd-main.js?v=mlz98oxf"></script>
+
+    <!-- PLUGINS -->
+    <script src="../../assets/js/docmd-image-lightbox.js?v=mlz98oxf" ></script>
+<script src="https://cdn.jsdelivr.net/npm/minisearch@7.2.0/dist/umd/index.min.js" ></script>
+<script src="../../assets/js/docmd-search.js?v=mlz98oxf" ></script>
+<script src="../../assets/js/init-mermaid.js?v=mlz98oxf" type="module"></script>
+
+
+    <!-- CUSTOM JS -->
+    
+</body>
+</html>
