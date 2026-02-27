@@ -1,4 +1,4 @@
-/**
+/*!
  * --------------------------------------------------------------------
  * docmd : the minimalist, zero-config documentation generator.
  *
@@ -6,59 +6,9 @@
  * @website     https://docmd.io
  * @repository  https://github.com/docmd-io/docmd
  * @license     MIT
- * @copyright   Copyright (c) 2025 docmd.io
+ * @copyright   Copyright (c) 2025-present docmd.io
  *
  * [docmd-source] - Please do not remove this header.
  * --------------------------------------------------------------------
  */
-
-import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
-
-(async function () {
-  'use strict';
-
-  // 1. Initialize
-  const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default';
-  
-  mermaid.initialize({
-    startOnLoad: false,
-    theme: theme,
-    securityLevel: 'loose',
-    fontFamily: 'inherit'
-  });
-
-  // 2. Render Function
-  async function render() {
-    try {
-      // Mermaid 10/11 API: run() handles finding .mermaid classes
-      await mermaid.run({
-        querySelector: '.mermaid'
-      });
-    } catch (e) {
-      console.error('Mermaid rendering failed:', e);
-    }
-  }
-
-  // 3. Theme Observer
-  const observer = new MutationObserver(async (mutations) => {
-    for (const m of mutations) {
-      if (m.attributeName === 'data-theme') {
-        // Reload to force re-render with new theme variables
-        // (Mermaid doesn't support dynamic theme swapping easily without re-parsing)
-        location.reload(); 
-      }
-    }
-  });
-  
-  observer.observe(document.documentElement, { 
-    attributes: true, 
-    attributeFilter: ['data-theme'] 
-  });
-
-  // 4. Boot
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', render);
-  } else {
-    render();
-  }
-})();
+import r from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";(async function(){"use strict";const a=document.documentElement.getAttribute("data-theme")==="dark"?"dark":"default";r.initialize({startOnLoad:!1,theme:a,securityLevel:"loose",fontFamily:"inherit"});async function t(){try{await r.run({querySelector:".mermaid"})}catch(e){console.error("Mermaid rendering failed:",e)}}new MutationObserver(async e=>{for(const n of e)n.attributeName==="data-theme"&&location.reload()}).observe(document.documentElement,{attributes:!0,attributeFilter:["data-theme"]}),document.readyState==="loading"?document.addEventListener("DOMContentLoaded",t):t()})();
