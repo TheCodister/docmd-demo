@@ -22,7 +22,7 @@
         window.DOCMD_DEFAULT_MODE = "system";
     </script>
 
-    <title>History of APIs</title>
+    <title>Pushing Code (Sending Your Work Online)</title>
 
     <!-- Favicon -->
     <link rel="icon" href="../../assets/favicon.ico?v=mm50tulb" type="image/x-icon" sizes="any">
@@ -46,15 +46,15 @@
 
     <!-- 3. PLUGINS & THEMES (Overrides Core) -->
     <!-- This includes 'docmd-theme-sky.css' injected by build.js -->
-    <meta name="description" content="An overview of the evolution of Application Programming Interfaces from early computing to modern web APIs.">
-<link rel="canonical" href="/api\history-of-apis/">
-<meta property="og:title" content="History of APIs : My Documentation">
-<meta property="og:description" content="An overview of the evolution of Application Programming Interfaces from early computing to modern web APIs.">
-<meta property="og:url" content="/api\history-of-apis/">
+    <meta name="description" content="Step-by-step guide for beginners on how to send your local changes to a shared Git repository.">
+<link rel="canonical" href="/git\pushing-code/">
+<meta property="og:title" content="Pushing Code (Sending Your Work Online) : My Documentation">
+<meta property="og:description" content="Step-by-step guide for beginners on how to send your local changes to a shared Git repository.">
+<meta property="og:url" content="/git\pushing-code/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="History of APIs">
-<meta name="twitter:description" content="An overview of the evolution of Application Programming Interfaces from early computing to modern web APIs.">
+<meta name="twitter:title" content="Pushing Code (Sending Your Work Online)">
+<meta name="twitter:description" content="Step-by-step guide for beginners on how to send your local changes to a shared Git repository.">
 
 
     <!-- GA4 -->
@@ -187,7 +187,7 @@
       
     </li>
     
-    <li class="active-parent collapsible expanded"  aria-expanded="true" >
+    <li class="collapsible"  aria-expanded="false" >
       <a href="../../api" class="" >
          
 <svg class="lucide-icon icon-arrow-left-right " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
@@ -237,8 +237,8 @@
       
         <ul class="submenu">
           
-    <li class="active" >
-      <a href="../../api/history-of-apis" class="active" >
+    <li class="" >
+      <a href="../../api/history-of-apis" class="" >
          
 <svg class="lucide-icon icon-history " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
   class="lucide lucide-history"
@@ -271,7 +271,7 @@
       
     </li>
     
-    <li class="collapsible"  aria-expanded="false" >
+    <li class="active-parent collapsible expanded"  aria-expanded="true" >
       <a href="../../git" class="" >
          
 <svg class="lucide-icon icon-git-branch " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
@@ -349,8 +349,8 @@
       
     </li>
     
-    <li class="" >
-      <a href="../../git/pushing-code" class="" >
+    <li class="active" >
+      <a href="../../git/pushing-code" class="active" >
          
 <svg class="lucide-icon icon-upload " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
   class="lucide lucide-upload"
@@ -716,7 +716,7 @@
 
                 </button>
                 
-                <h1>History of APIs</h1>
+                <h1>Pushing Code (Sending Your Work Online)</h1>
             </div>
             
             <div class="header-right">
@@ -798,82 +798,152 @@
         <main class="content-area" id="main-content">
             <div class="content-layout">
                 <div class="main-content">
-                    <h1 id="history-of-apis">History of APIs 📜</h1>
-<p>Application Programming Interfaces (APIs) are a foundational concept in modern software development. While they are often associated with web services and cloud platforms today, APIs have a much longer history that parallels the evolution of computing itself.</p>
-<div class="docmd-container callout callout-info"><div class="callout-title">"What is an API?"</div><div class="callout-content">
-<p>An API defines how different software components communicate with each other using well-defined rules and interfaces.</p>
-</div></div>
-<hr>
-<h2 id="early-foundations-1960s1970s">Early Foundations (1960s–1970s)</h2>
-<p>In the earliest days of computing, programs were tightly coupled to hardware. As operating systems matured, <strong>system calls</strong> emerged as a structured way for applications to request services such as memory allocation, file access, and process control.</p>
-<p>These system calls are considered the earliest form of APIs. They introduced the idea of abstraction—allowing developers to use system functionality without knowing internal implementation details.</p>
-<div class="docmd-container card"><div class="card-title">"Key Concept"</div><div class="card-content">
-<p><strong>Abstraction</strong> allows software to evolve independently from the hardware it runs on.</p>
-</div></div>
-<hr>
-<h2 id="library-and-os-apis-1980s">Library and OS APIs (1980s)</h2>
-<p>With the rise of personal computers, operating systems began exposing richer APIs to developers. Platforms such as UNIX and Microsoft Windows provided standardized interfaces that allowed third-party applications to interact consistently with the system.</p>
-<p>At the same time, programming languages shipped with <strong>standard libraries</strong>, offering reusable functions that further reinforced API-driven development.</p>
-<pre class="hljs"><code><span class="hljs-comment">// Example: C standard library usage</span>
-<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Hello, world!&quot;</span>);
-</code></pre>
-<hr>
-<h2 id="object-oriented-and-enterprise-apis-1990s">Object-Oriented and Enterprise APIs (1990s)</h2>
-<p>The adoption of object-oriented programming expanded APIs beyond simple functions to include classes, methods, and interfaces. Languages such as Java popularized large, well-documented API ecosystems.</p>
-<p>Enterprise technologies like COM, CORBA, and later Java EE enabled large-scale system integration across distributed environments.</p>
-<div class="docmd-container callout callout-tip"><div class="callout-title">"Why this mattered"</div><div class="callout-content">
-<p>Reusable APIs reduced duplication and made large systems easier to maintain.</p>
-</div></div>
-<hr>
-<h2 id="the-rise-of-web-apis-2000s">The Rise of Web APIs (2000s)</h2>
-<p>The internet transformed APIs into platform-independent communication tools. Web APIs allowed systems written in different languages to communicate over HTTP.</p>
-<p>A major milestone occurred in 2000 when <strong>Roy Fielding</strong> introduced REST (Representational State Transfer) in his doctoral dissertation. REST defined principles such as statelessness, resource-based URLs, and standard HTTP methods.</p>
-<div class="docmd-tabs">
-<div class="docmd-tabs-nav"><div class="docmd-tabs-nav-item active">REST Example</div><div class="docmd-tabs-nav-item ">Response (JSON)</div></div><div class="docmd-tabs-content"><div class="docmd-tab-pane active"><pre class="hljs"><code><span class="hljs-keyword">GET</span> <span class="hljs-string">/users/123</span> <span class="hljs-meta">HTTP/1.1</span>
-<span class="hljs-attribute">Host</span><span class="hljs-punctuation">: </span>api.example.com
-</code></pre>
-</div><div class="docmd-tab-pane "><pre class="hljs"><code><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">&quot;id&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">123</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Alice&quot;</span>
-<span class="hljs-punctuation">}</span>
-</code></pre>
-</div></div></div><hr>
-<h2 id="modern-apis-and-cloud-computing-2010spresent">Modern APIs and Cloud Computing (2010s–Present)</h2>
-<p>Today, APIs power cloud platforms, mobile applications, and microservices architectures. Companies expose public APIs to enable integrations, while internal APIs support scalable distributed systems.</p>
-<p>Modern API styles include:</p>
+                    <h1 id="pushing-code-sending-your-work-online">Pushing Code (Sending Your Work Online)</h1>
+<p><strong>Pushing code</strong> means <strong>sending your latest changes from your computer to the shared online repository</strong><br>
+(for example, on GitHub, GitLab, or Bitbucket).</p>
+<p>Think of it like:</p>
 <ul>
-<li>REST APIs</li>
-<li>GraphQL APIs</li>
-<li>Event-driven and streaming APIs</li>
+<li>You write some changes on your <strong>local copy</strong> of a document.</li>
+<li>When you are happy, you <strong>upload</strong> those changes so your team can see them.</li>
 </ul>
-<div class="mermaid">graph LR;
-    Client --> API;
-    API --> ServiceA;
-    API --> ServiceB;
+<p>In Git terms:</p>
+<ul>
+<li>Your computer has a <strong>local repository</strong>.</li>
+<li>The shared place (e.g. GitHub) is the <strong>remote repository</strong>.</li>
+<li><code>git push</code> sends your changes from <strong>local → remote</strong>.</li>
+</ul>
+<p>Visually, pushing looks like this:</p>
+<div class="mermaid">sequenceDiagram
+  participant You as You (local)
+  participant Local as Local repo
+  participant Remote as Remote repo (GitHub / GitLab)
+
+  You->>Local: git add<br/>git commit
+  Local->>Remote: git push
+  Remote-->>You: Confirms new commits are stored
 </div><hr>
-<h2 id="why-apis-matter-today">Why APIs Matter Today</h2>
-<div class="docmd-container callout callout-success"><div class="callout-title">"Strategic Importance"</div><div class="callout-content">
-<p>APIs are no longer just technical tools—they are products, platforms, and business enablers.</p>
-</div></div>
-<p>APIs enable faster development, cross-platform compatibility, and innovation by allowing teams to build on existing services instead of reinventing them.</p>
-<hr>
-<h2 id="conclusion">Conclusion</h2>
-<p>From early system calls to modern cloud-based services, APIs have evolved to meet the growing complexity of software systems. Their history reflects a continuous effort to improve abstraction, interoperability, and scalability in computing.</p>
-<hr>
-<h2 id="sources">Sources 📚</h2>
+<h2 id="before-you-push-the-basic-flow">Before You Push: The Basic Flow</h2>
+<p>Usually, you follow these three steps:</p>
 <ol>
-<li>Fielding, R. T. (2000). <em>Architectural Styles and the Design of Network-based Software Architectures</em>. University of California, Irvine.</li>
-<li>Bloch, J. (2006). <em>How to Design a Good API and Why It Matters</em>. ACM.</li>
-<li>Tanenbaum, A. S., &amp; Bos, H. (2015). <em>Modern Operating Systems</em> (4th ed.). Pearson.</li>
-<li>IBM Documentation – <em>API Concepts and History</em>.</li>
-<li>Red Hat – <em>What is an API?</em></li>
+<li><strong>Check what changed</strong></li>
+<li><strong>Stage the changes</strong> (choose what to include)</li>
+<li><strong>Commit</strong> the changes (save a snapshot)</li>
+<li><strong>Push</strong> the commit(s) to the remote repository</li>
 </ol>
+<p>We will walk through each step with simple examples.</p>
+<hr>
+<h2 id="1-check-what-changed">1. Check What Changed</h2>
+<p>In your project folder, open a terminal or command prompt and run:</p>
+<pre class="hljs"><code>git status
+</code></pre>
+<p>This shows:</p>
+<ul>
+<li>Which files are <strong>new</strong></li>
+<li>Which files have been <strong>modified</strong></li>
+<li>Which files are <strong>ready to be committed</strong></li>
+</ul>
+<p>Example output (simplified):</p>
+<pre class="hljs"><code>On branch main
+Changes not staged for commit:
+  modified:   README.md
+Untracked files:
+  new-feature.txt
+</code></pre>
+<p>This tells you Git sees changes but you have not prepared them yet.</p>
+<hr>
+<h2 id="2-stage-the-changes">2. Stage the Changes</h2>
+<p>Staging means <strong>selecting which files you want to include</strong> in your next snapshot (commit).</p>
+<ul>
+<li>To stage <strong>one file</strong>:</li>
+</ul>
+<pre class="hljs"><code>git add README.md
+</code></pre>
+<ul>
+<li>To stage <strong>all changed files</strong> in the project:</li>
+</ul>
+<pre class="hljs"><code>git add .
+</code></pre>
+<p>After staging, run <code>git status</code> again:</p>
+<pre class="hljs"><code>git status
+</code></pre>
+<p>You should now see something like:</p>
+<pre class="hljs"><code>Changes to be committed:
+  modified:   README.md
+  new file:   new-feature.txt
+</code></pre>
+<p>This means Git is ready to save these files in the next commit.</p>
+<hr>
+<h2 id="3-commit-your-changes">3. Commit Your Changes</h2>
+<p>A <strong>commit</strong> is like a <strong>named snapshot</strong> of your project at a point in time.</p>
+<p>To create a commit, run:</p>
+<pre class="hljs"><code>git commit -m <span class="hljs-string">&quot;Add new feature description&quot;</span>
+</code></pre>
+<ul>
+<li>The text inside quotes is your <strong>commit message</strong>.</li>
+<li>Use simple, clear language like:
+<ul>
+<li><code>&quot;Fix typo in introduction&quot;</code></li>
+<li><code>&quot;Update home page content&quot;</code></li>
+<li><code>&quot;Add login button styling&quot;</code></li>
+</ul>
+</li>
+</ul>
+<p>After you commit, your changes are now:</p>
+<ul>
+<li>Saved <strong>locally</strong> in your Git history</li>
+<li><strong>Not yet</strong> uploaded to the shared remote repository</li>
+</ul>
+<hr>
+<h2 id="4-push-your-commit-to-the-remote">4. Push Your Commit to the Remote</h2>
+<p>To send your commit(s) to the remote repository, run:</p>
+<pre class="hljs"><code>git push
+</code></pre>
+<p>In many teams, the main branch is called <code>main</code> or <code>master</code>.<br>
+If you’re on a different branch (for example, <code>feature/login-page</code>), Git will push that branch to the remote.</p>
+<p>Example:</p>
+<pre class="hljs"><code>git push origin main
+</code></pre>
+<p>Here:</p>
+<ul>
+<li><code>origin</code> is the <strong>name of the remote</strong> (usually the default)</li>
+<li><code>main</code> is the <strong>name of the branch</strong> you are pushing</li>
+</ul>
+<p>After this command succeeds, your teammates can see your changes online.</p>
+<hr>
+<h2 id="complete-example-from-change-to-push">Complete Example: From Change to Push</h2>
+<p>Imagine you updated a file called <code>home-page.md</code>.</p>
+<p>Step-by-step:</p>
+<pre class="hljs"><code><span class="hljs-comment"># 1. See what changed</span>
+git status
+
+<span class="hljs-comment"># 2. Stage the file</span>
+git add home-page.md
+
+<span class="hljs-comment"># 3. Commit with a clear message</span>
+git commit -m <span class="hljs-string">&quot;Update home page introduction text&quot;</span>
+
+<span class="hljs-comment"># 4. Push to the remote repository</span>
+git push
+</code></pre>
+<p>If everything is set up correctly, you will see messages that your branch was pushed successfully.</p>
+<hr>
+<h2 id="common-questions">Common Questions</h2>
+<p><strong>Q: What if <code>git push</code> asks for a username or password?</strong><br>
+A: This means Git needs to authenticate you with the remote service (like GitHub).<br>
+Follow your company’s instructions (they may use a token, SSH key, or single sign-on).</p>
+<p><strong>Q: What if <code>git push</code> is rejected?</strong><br>
+A: Often this means someone else has pushed changes before you.<br>
+You usually need to:</p>
+<pre class="hljs"><code>git pull
+</code></pre>
+<p>to bring their changes down first, resolve any conflicts, then push again.<br>
+You can learn more about this in the <strong>Pulling Code</strong> and <strong>Branches &amp; Merging</strong> pages.</p>
 
 
                     
                     <div class="page-navigation">
                         
-                        <a href="../../api" class="prev-page">
+                        <a href="../../git/git-terms-glossary" class="prev-page">
                             
 <svg class="lucide-icon icon-arrow-left page-nav-icon" width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
   class="lucide lucide-arrow-left"
@@ -891,12 +961,12 @@
   <path d="M19 12H5" />
 </svg>
 
-                            <span><small>Previous</small><strong>API</strong></span>
+                            <span><small>Previous</small><strong>Git Terms Glossary</strong></span>
                         </a>
                         
                         
-                        <a href="../../git" class="next-page">
-                            <span><small>Next</small><strong>Git Basics</strong></span>
+                        <a href="../../git/pulling-code" class="next-page">
+                            <span><small>Next</small><strong>Pulling Code</strong></span>
                             
 <svg class="lucide-icon icon-arrow-right page-nav-icon" width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
   class="lucide lucide-arrow-right"
@@ -945,35 +1015,31 @@
     <ul class="toc-list">
       
         <li class="toc-item toc-level-2">
-          <a href="#early-foundations-1960s1970s" class="toc-link">Early Foundations (1960s–1970s)</a>
+          <a href="#before-you-push-the-basic-flow" class="toc-link">Before You Push: The Basic Flow</a>
         </li>
       
         <li class="toc-item toc-level-2">
-          <a href="#library-and-os-apis-1980s" class="toc-link">Library and OS APIs (1980s)</a>
+          <a href="#1-check-what-changed" class="toc-link">1. Check What Changed</a>
         </li>
       
         <li class="toc-item toc-level-2">
-          <a href="#object-oriented-and-enterprise-apis-1990s" class="toc-link">Object-Oriented and Enterprise APIs (1990s)</a>
+          <a href="#2-stage-the-changes" class="toc-link">2. Stage the Changes</a>
         </li>
       
         <li class="toc-item toc-level-2">
-          <a href="#the-rise-of-web-apis-2000s" class="toc-link">The Rise of Web APIs (2000s)</a>
+          <a href="#3-commit-your-changes" class="toc-link">3. Commit Your Changes</a>
         </li>
       
         <li class="toc-item toc-level-2">
-          <a href="#modern-apis-and-cloud-computing-2010spresent" class="toc-link">Modern APIs and Cloud Computing (2010s–Present)</a>
+          <a href="#4-push-your-commit-to-the-remote" class="toc-link">4. Push Your Commit to the Remote</a>
         </li>
       
         <li class="toc-item toc-level-2">
-          <a href="#why-apis-matter-today" class="toc-link">Why APIs Matter Today</a>
+          <a href="#complete-example-from-change-to-push" class="toc-link">Complete Example: From Change to Push</a>
         </li>
       
         <li class="toc-item toc-level-2">
-          <a href="#conclusion" class="toc-link">Conclusion</a>
-        </li>
-      
-        <li class="toc-item toc-level-2">
-          <a href="#sources" class="toc-link">Sources 📚</a>
+          <a href="#common-questions" class="toc-link">Common Questions</a>
         </li>
       
     </ul>

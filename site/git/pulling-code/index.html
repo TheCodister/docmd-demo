@@ -22,7 +22,7 @@
         window.DOCMD_DEFAULT_MODE = "system";
     </script>
 
-    <title>History of APIs</title>
+    <title>Pulling Code (Getting the Latest Changes)</title>
 
     <!-- Favicon -->
     <link rel="icon" href="../../assets/favicon.ico?v=mm50tulb" type="image/x-icon" sizes="any">
@@ -46,15 +46,15 @@
 
     <!-- 3. PLUGINS & THEMES (Overrides Core) -->
     <!-- This includes 'docmd-theme-sky.css' injected by build.js -->
-    <meta name="description" content="An overview of the evolution of Application Programming Interfaces from early computing to modern web APIs.">
-<link rel="canonical" href="/api\history-of-apis/">
-<meta property="og:title" content="History of APIs : My Documentation">
-<meta property="og:description" content="An overview of the evolution of Application Programming Interfaces from early computing to modern web APIs.">
-<meta property="og:url" content="/api\history-of-apis/">
+    <meta name="description" content="Beginner-friendly guide on how to download the latest changes from the remote Git repository to your computer.">
+<link rel="canonical" href="/git\pulling-code/">
+<meta property="og:title" content="Pulling Code (Getting the Latest Changes) : My Documentation">
+<meta property="og:description" content="Beginner-friendly guide on how to download the latest changes from the remote Git repository to your computer.">
+<meta property="og:url" content="/git\pulling-code/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="History of APIs">
-<meta name="twitter:description" content="An overview of the evolution of Application Programming Interfaces from early computing to modern web APIs.">
+<meta name="twitter:title" content="Pulling Code (Getting the Latest Changes)">
+<meta name="twitter:description" content="Beginner-friendly guide on how to download the latest changes from the remote Git repository to your computer.">
 
 
     <!-- GA4 -->
@@ -187,7 +187,7 @@
       
     </li>
     
-    <li class="active-parent collapsible expanded"  aria-expanded="true" >
+    <li class="collapsible"  aria-expanded="false" >
       <a href="../../api" class="" >
          
 <svg class="lucide-icon icon-arrow-left-right " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
@@ -237,8 +237,8 @@
       
         <ul class="submenu">
           
-    <li class="active" >
-      <a href="../../api/history-of-apis" class="active" >
+    <li class="" >
+      <a href="../../api/history-of-apis" class="" >
          
 <svg class="lucide-icon icon-history " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
   class="lucide lucide-history"
@@ -271,7 +271,7 @@
       
     </li>
     
-    <li class="collapsible"  aria-expanded="false" >
+    <li class="active-parent collapsible expanded"  aria-expanded="true" >
       <a href="../../git" class="" >
          
 <svg class="lucide-icon icon-git-branch " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
@@ -379,8 +379,8 @@
       
     </li>
     
-    <li class="" >
-      <a href="../../git/pulling-code" class="" >
+    <li class="active" >
+      <a href="../../git/pulling-code" class="active" >
          
 <svg class="lucide-icon icon-download " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
   class="lucide lucide-download"
@@ -716,7 +716,7 @@
 
                 </button>
                 
-                <h1>History of APIs</h1>
+                <h1>Pulling Code (Getting the Latest Changes)</h1>
             </div>
             
             <div class="header-right">
@@ -798,82 +798,149 @@
         <main class="content-area" id="main-content">
             <div class="content-layout">
                 <div class="main-content">
-                    <h1 id="history-of-apis">History of APIs 📜</h1>
-<p>Application Programming Interfaces (APIs) are a foundational concept in modern software development. While they are often associated with web services and cloud platforms today, APIs have a much longer history that parallels the evolution of computing itself.</p>
-<div class="docmd-container callout callout-info"><div class="callout-title">"What is an API?"</div><div class="callout-content">
-<p>An API defines how different software components communicate with each other using well-defined rules and interfaces.</p>
-</div></div>
-<hr>
-<h2 id="early-foundations-1960s1970s">Early Foundations (1960s–1970s)</h2>
-<p>In the earliest days of computing, programs were tightly coupled to hardware. As operating systems matured, <strong>system calls</strong> emerged as a structured way for applications to request services such as memory allocation, file access, and process control.</p>
-<p>These system calls are considered the earliest form of APIs. They introduced the idea of abstraction—allowing developers to use system functionality without knowing internal implementation details.</p>
-<div class="docmd-container card"><div class="card-title">"Key Concept"</div><div class="card-content">
-<p><strong>Abstraction</strong> allows software to evolve independently from the hardware it runs on.</p>
-</div></div>
-<hr>
-<h2 id="library-and-os-apis-1980s">Library and OS APIs (1980s)</h2>
-<p>With the rise of personal computers, operating systems began exposing richer APIs to developers. Platforms such as UNIX and Microsoft Windows provided standardized interfaces that allowed third-party applications to interact consistently with the system.</p>
-<p>At the same time, programming languages shipped with <strong>standard libraries</strong>, offering reusable functions that further reinforced API-driven development.</p>
-<pre class="hljs"><code><span class="hljs-comment">// Example: C standard library usage</span>
-<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Hello, world!&quot;</span>);
-</code></pre>
-<hr>
-<h2 id="object-oriented-and-enterprise-apis-1990s">Object-Oriented and Enterprise APIs (1990s)</h2>
-<p>The adoption of object-oriented programming expanded APIs beyond simple functions to include classes, methods, and interfaces. Languages such as Java popularized large, well-documented API ecosystems.</p>
-<p>Enterprise technologies like COM, CORBA, and later Java EE enabled large-scale system integration across distributed environments.</p>
-<div class="docmd-container callout callout-tip"><div class="callout-title">"Why this mattered"</div><div class="callout-content">
-<p>Reusable APIs reduced duplication and made large systems easier to maintain.</p>
-</div></div>
-<hr>
-<h2 id="the-rise-of-web-apis-2000s">The Rise of Web APIs (2000s)</h2>
-<p>The internet transformed APIs into platform-independent communication tools. Web APIs allowed systems written in different languages to communicate over HTTP.</p>
-<p>A major milestone occurred in 2000 when <strong>Roy Fielding</strong> introduced REST (Representational State Transfer) in his doctoral dissertation. REST defined principles such as statelessness, resource-based URLs, and standard HTTP methods.</p>
-<div class="docmd-tabs">
-<div class="docmd-tabs-nav"><div class="docmd-tabs-nav-item active">REST Example</div><div class="docmd-tabs-nav-item ">Response (JSON)</div></div><div class="docmd-tabs-content"><div class="docmd-tab-pane active"><pre class="hljs"><code><span class="hljs-keyword">GET</span> <span class="hljs-string">/users/123</span> <span class="hljs-meta">HTTP/1.1</span>
-<span class="hljs-attribute">Host</span><span class="hljs-punctuation">: </span>api.example.com
-</code></pre>
-</div><div class="docmd-tab-pane "><pre class="hljs"><code><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">&quot;id&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">123</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Alice&quot;</span>
-<span class="hljs-punctuation">}</span>
-</code></pre>
-</div></div></div><hr>
-<h2 id="modern-apis-and-cloud-computing-2010spresent">Modern APIs and Cloud Computing (2010s–Present)</h2>
-<p>Today, APIs power cloud platforms, mobile applications, and microservices architectures. Companies expose public APIs to enable integrations, while internal APIs support scalable distributed systems.</p>
-<p>Modern API styles include:</p>
+                    <h1 id="pulling-code-getting-the-latest-changes">Pulling Code (Getting the Latest Changes)</h1>
+<p><strong>Pulling code</strong> means <strong>getting the newest changes from the shared online repository onto your computer</strong>.</p>
+<p>Think of it like:</p>
 <ul>
-<li>REST APIs</li>
-<li>GraphQL APIs</li>
-<li>Event-driven and streaming APIs</li>
+<li>Your teammates have updated the document online.</li>
+<li>You click “refresh” to download their latest version to your computer.</li>
 </ul>
-<div class="mermaid">graph LR;
-    Client --> API;
-    API --> ServiceA;
-    API --> ServiceB;
+<p>In Git terms:</p>
+<ul>
+<li>The shared place (e.g. GitHub) is the <strong>remote repository</strong>.</li>
+<li>Your computer has the <strong>local repository</strong>.</li>
+<li><code>git pull</code> brings changes from <strong>remote → local</strong>.</li>
+</ul>
+<p>Here is a simple diagram of a pull:</p>
+<div class="mermaid">sequenceDiagram
+  participant Remote as Remote repo (GitHub / GitLab)
+  participant Local as Local repo
+  participant You as You (local)
+
+  You->>Local: git pull
+  Local->>Remote: Ask for latest commits
+  Remote-->>Local: Send new commits
+  Local-->>You: Files updated on your machine
 </div><hr>
-<h2 id="why-apis-matter-today">Why APIs Matter Today</h2>
-<div class="docmd-container callout callout-success"><div class="callout-title">"Strategic Importance"</div><div class="callout-content">
-<p>APIs are no longer just technical tools—they are products, platforms, and business enablers.</p>
-</div></div>
-<p>APIs enable faster development, cross-platform compatibility, and innovation by allowing teams to build on existing services instead of reinventing them.</p>
+<h2 id="when-should-you-pull">When Should You Pull?</h2>
+<p>You should run <code>git pull</code>:</p>
+<ul>
+<li><strong>Before you start work each day</strong> – to make sure you start from the latest version</li>
+<li><strong>Before you create a new branch</strong> – so your branch is based on recent work</li>
+<li><strong>Before you push your own changes</strong> – to avoid conflicts when others have pushed earlier</li>
+</ul>
+<p>Pulling regularly helps keep everyone’s work in sync.</p>
 <hr>
-<h2 id="conclusion">Conclusion</h2>
-<p>From early system calls to modern cloud-based services, APIs have evolved to meet the growing complexity of software systems. Their history reflects a continuous effort to improve abstraction, interoperability, and scalability in computing.</p>
-<hr>
-<h2 id="sources">Sources 📚</h2>
+<h2 id="basic-command-git-pull">Basic Command: <code>git pull</code></h2>
+<p>In your project folder, open a terminal or command prompt and run:</p>
+<pre class="hljs"><code>git pull
+</code></pre>
+<p>Git will:</p>
 <ol>
-<li>Fielding, R. T. (2000). <em>Architectural Styles and the Design of Network-based Software Architectures</em>. University of California, Irvine.</li>
-<li>Bloch, J. (2006). <em>How to Design a Good API and Why It Matters</em>. ACM.</li>
-<li>Tanenbaum, A. S., &amp; Bos, H. (2015). <em>Modern Operating Systems</em> (4th ed.). Pearson.</li>
-<li>IBM Documentation – <em>API Concepts and History</em>.</li>
-<li>Red Hat – <em>What is an API?</em></li>
+<li>Connect to the remote repository</li>
+<li>Download any new commits</li>
+<li>Try to automatically combine them with your local branch</li>
 </ol>
+<p>If your branch is called <code>main</code> and the remote is <code>origin</code>, this is usually the same as:</p>
+<pre class="hljs"><code>git pull origin main
+</code></pre>
+<hr>
+<h2 id="example-starting-your-day">Example: Starting Your Day</h2>
+<p>Here’s a simple daily routine:</p>
+<pre class="hljs"><code><span class="hljs-built_in">cd</span> your-project-folder
+
+<span class="hljs-comment"># See your current branch and status</span>
+git status
+
+<span class="hljs-comment"># Get the latest changes from the remote</span>
+git pull
+</code></pre>
+<p>After <code>git pull</code> finishes:</p>
+<ul>
+<li>Your local files are updated</li>
+<li>You see any new code or text your teammates have added</li>
+</ul>
+<hr>
+<h2 id="what-happens-if-there-are-no-new-changes">What Happens If There Are No New Changes?</h2>
+<p>If your local branch is already up to date, Git will show a message like:</p>
+<pre class="hljs"><code>Already up to date.
+</code></pre>
+<p>This simply means:</p>
+<ul>
+<li>There is <strong>nothing new</strong> to download</li>
+<li>You are already on the latest version of that branch</li>
+</ul>
+<hr>
+<h2 id="what-if-there-are-new-changes">What If There Are New Changes?</h2>
+<p>If there are new commits on the remote branch, Git will:</p>
+<ul>
+<li>Download them</li>
+<li>Try to <strong>merge</strong> them with your local branch automatically</li>
+</ul>
+<p>You might see messages showing:</p>
+<ul>
+<li>Which files changed</li>
+<li>How many lines were added or removed</li>
+</ul>
+<p>Example (simplified):</p>
+<pre class="hljs"><code>Updating 1234567..89abcde
+Fast-forward
+ README.md | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+</code></pre>
+<p>You can now open your files and see the latest content.</p>
+<hr>
+<h2 id="when-pull-causes-a-conflict">When Pull Causes a Conflict</h2>
+<p>Sometimes, both you and a teammate edit <strong>the same part of the same file</strong>.<br>
+When you run <code>git pull</code>, Git may not know which version to keep.</p>
+<p>This is called a <strong>merge conflict</strong>.</p>
+<p>In that case, Git will:</p>
+<ul>
+<li>Stop and mark the conflict in the file</li>
+<li>Ask you to <strong>manually decide</strong> which change to keep (yours, theirs, or both)</li>
+</ul>
+<p>Example conflict markers in a file:</p>
+<pre class="hljs"><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+Your version of the text here.
+=======
+Teammate&#x27;s version of the text here.
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; origin/main
+</code></pre>
+<p>To fix this:</p>
+<ol>
+<li>Open the file in your editor</li>
+<li>Choose the correct text (or combine both)</li>
+<li>Remove the <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>, and <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code> lines</li>
+<li>Save the file</li>
+<li>Run:</li>
+</ol>
+<pre class="hljs"><code>git add path/to/conflicted-file
+git commit -m <span class="hljs-string">&quot;Resolve merge conflict in file&quot;</span>
+</code></pre>
+<p>You will learn more about this in <strong>Branches &amp; Merging</strong>.</p>
+<hr>
+<h2 id="simple-workflow-pull-before-push">Simple Workflow: Pull Before Push</h2>
+<p>A safe habit is:</p>
+<ol>
+<li><strong>Pull first</strong> to get the latest changes</li>
+<li>Then <strong>push</strong> your own changes</li>
+</ol>
+<p>Example:</p>
+<pre class="hljs"><code><span class="hljs-comment"># Get latest changes from remote</span>
+git pull
+
+<span class="hljs-comment"># (If there are conflicts, resolve them and commit)</span>
+
+<span class="hljs-comment"># Send your new commits to remote</span>
+git push
+</code></pre>
+<p>This reduces the chance that your push will be rejected due to other people’s new commits.</p>
 
 
                     
                     <div class="page-navigation">
                         
-                        <a href="../../api" class="prev-page">
+                        <a href="../../git/pushing-code" class="prev-page">
                             
 <svg class="lucide-icon icon-arrow-left page-nav-icon" width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
   class="lucide lucide-arrow-left"
@@ -891,12 +958,12 @@
   <path d="M19 12H5" />
 </svg>
 
-                            <span><small>Previous</small><strong>API</strong></span>
+                            <span><small>Previous</small><strong>Pushing Code</strong></span>
                         </a>
                         
                         
-                        <a href="../../git" class="next-page">
-                            <span><small>Next</small><strong>Git Basics</strong></span>
+                        <a href="../../git/branches-and-merging" class="next-page">
+                            <span><small>Next</small><strong>Branches &amp; Merging</strong></span>
                             
 <svg class="lucide-icon icon-arrow-right page-nav-icon" width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
   class="lucide lucide-arrow-right"
@@ -945,35 +1012,31 @@
     <ul class="toc-list">
       
         <li class="toc-item toc-level-2">
-          <a href="#early-foundations-1960s1970s" class="toc-link">Early Foundations (1960s–1970s)</a>
+          <a href="#when-should-you-pull" class="toc-link">When Should You Pull?</a>
         </li>
       
         <li class="toc-item toc-level-2">
-          <a href="#library-and-os-apis-1980s" class="toc-link">Library and OS APIs (1980s)</a>
+          <a href="#basic-command-git-pull" class="toc-link">Basic Command: git pull</a>
         </li>
       
         <li class="toc-item toc-level-2">
-          <a href="#object-oriented-and-enterprise-apis-1990s" class="toc-link">Object-Oriented and Enterprise APIs (1990s)</a>
+          <a href="#example-starting-your-day" class="toc-link">Example: Starting Your Day</a>
         </li>
       
         <li class="toc-item toc-level-2">
-          <a href="#the-rise-of-web-apis-2000s" class="toc-link">The Rise of Web APIs (2000s)</a>
+          <a href="#what-happens-if-there-are-no-new-changes" class="toc-link">What Happens If There Are No New Changes?</a>
         </li>
       
         <li class="toc-item toc-level-2">
-          <a href="#modern-apis-and-cloud-computing-2010spresent" class="toc-link">Modern APIs and Cloud Computing (2010s–Present)</a>
+          <a href="#what-if-there-are-new-changes" class="toc-link">What If There Are New Changes?</a>
         </li>
       
         <li class="toc-item toc-level-2">
-          <a href="#why-apis-matter-today" class="toc-link">Why APIs Matter Today</a>
+          <a href="#when-pull-causes-a-conflict" class="toc-link">When Pull Causes a Conflict</a>
         </li>
       
         <li class="toc-item toc-level-2">
-          <a href="#conclusion" class="toc-link">Conclusion</a>
-        </li>
-      
-        <li class="toc-item toc-level-2">
-          <a href="#sources" class="toc-link">Sources 📚</a>
+          <a href="#simple-workflow-pull-before-push" class="toc-link">Simple Workflow: Pull Before Push</a>
         </li>
       
     </ul>

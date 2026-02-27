@@ -43,6 +43,12 @@ module.exports = {
     { title: 'API', path: '/api', icon: 'arrow-left-right', collapsible: true, children: [
       { title: 'History of APIs', path: '/api/history-of-apis', icon: 'history' },
     ] },
+    { title: 'Git Basics', path: '/git', icon: 'git-branch', collapsible: true, children: [
+      { title: 'Git Terms Glossary', path: '/git/git-terms-glossary', icon: 'book' },
+      { title: 'Pushing Code', path: '/git/pushing-code', icon: 'upload' },
+      { title: 'Pulling Code', path: '/git/pulling-code', icon: 'download' },
+      { title: 'Branches & Merging', path: '/git/branches-and-merging', icon: 'git-merge' },
+    ] },
     {
       title: 'Guide',
       icon: 'book-open',

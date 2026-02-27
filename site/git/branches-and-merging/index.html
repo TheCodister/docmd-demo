@@ -22,7 +22,7 @@
         window.DOCMD_DEFAULT_MODE = "system";
     </script>
 
-    <title>History of APIs</title>
+    <title>Branches and Merging (Working Safely with Changes)</title>
 
     <!-- Favicon -->
     <link rel="icon" href="../../assets/favicon.ico?v=mm50tulb" type="image/x-icon" sizes="any">
@@ -46,15 +46,15 @@
 
     <!-- 3. PLUGINS & THEMES (Overrides Core) -->
     <!-- This includes 'docmd-theme-sky.css' injected by build.js -->
-    <meta name="description" content="An overview of the evolution of Application Programming Interfaces from early computing to modern web APIs.">
-<link rel="canonical" href="/api\history-of-apis/">
-<meta property="og:title" content="History of APIs : My Documentation">
-<meta property="og:description" content="An overview of the evolution of Application Programming Interfaces from early computing to modern web APIs.">
-<meta property="og:url" content="/api\history-of-apis/">
+    <meta name="description" content="Plain-language explanation of Git branches and how to merge them, with simple everyday examples.">
+<link rel="canonical" href="/git\branches-and-merging/">
+<meta property="og:title" content="Branches and Merging (Working Safely with Changes) : My Documentation">
+<meta property="og:description" content="Plain-language explanation of Git branches and how to merge them, with simple everyday examples.">
+<meta property="og:url" content="/git\branches-and-merging/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="History of APIs">
-<meta name="twitter:description" content="An overview of the evolution of Application Programming Interfaces from early computing to modern web APIs.">
+<meta name="twitter:title" content="Branches and Merging (Working Safely with Changes)">
+<meta name="twitter:description" content="Plain-language explanation of Git branches and how to merge them, with simple everyday examples.">
 
 
     <!-- GA4 -->
@@ -187,7 +187,7 @@
       
     </li>
     
-    <li class="active-parent collapsible expanded"  aria-expanded="true" >
+    <li class="collapsible"  aria-expanded="false" >
       <a href="../../api" class="" >
          
 <svg class="lucide-icon icon-arrow-left-right " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
@@ -237,8 +237,8 @@
       
         <ul class="submenu">
           
-    <li class="active" >
-      <a href="../../api/history-of-apis" class="active" >
+    <li class="" >
+      <a href="../../api/history-of-apis" class="" >
          
 <svg class="lucide-icon icon-history " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
   class="lucide lucide-history"
@@ -271,7 +271,7 @@
       
     </li>
     
-    <li class="collapsible"  aria-expanded="false" >
+    <li class="active-parent collapsible expanded"  aria-expanded="true" >
       <a href="../../git" class="" >
          
 <svg class="lucide-icon icon-git-branch " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
@@ -409,8 +409,8 @@
       
     </li>
     
-    <li class="" >
-      <a href="../../git/branches-and-merging" class="" >
+    <li class="active" >
+      <a href="../../git/branches-and-merging" class="active" >
          
 <svg class="lucide-icon icon-git-merge " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
   class="lucide lucide-git-merge"
@@ -716,7 +716,7 @@
 
                 </button>
                 
-                <h1>History of APIs</h1>
+                <h1>Branches and Merging (Working Safely with Changes)</h1>
             </div>
             
             <div class="header-right">
@@ -798,82 +798,226 @@
         <main class="content-area" id="main-content">
             <div class="content-layout">
                 <div class="main-content">
-                    <h1 id="history-of-apis">History of APIs 📜</h1>
-<p>Application Programming Interfaces (APIs) are a foundational concept in modern software development. While they are often associated with web services and cloud platforms today, APIs have a much longer history that parallels the evolution of computing itself.</p>
-<div class="docmd-container callout callout-info"><div class="callout-title">"What is an API?"</div><div class="callout-content">
-<p>An API defines how different software components communicate with each other using well-defined rules and interfaces.</p>
-</div></div>
-<hr>
-<h2 id="early-foundations-1960s1970s">Early Foundations (1960s–1970s)</h2>
-<p>In the earliest days of computing, programs were tightly coupled to hardware. As operating systems matured, <strong>system calls</strong> emerged as a structured way for applications to request services such as memory allocation, file access, and process control.</p>
-<p>These system calls are considered the earliest form of APIs. They introduced the idea of abstraction—allowing developers to use system functionality without knowing internal implementation details.</p>
-<div class="docmd-container card"><div class="card-title">"Key Concept"</div><div class="card-content">
-<p><strong>Abstraction</strong> allows software to evolve independently from the hardware it runs on.</p>
-</div></div>
-<hr>
-<h2 id="library-and-os-apis-1980s">Library and OS APIs (1980s)</h2>
-<p>With the rise of personal computers, operating systems began exposing richer APIs to developers. Platforms such as UNIX and Microsoft Windows provided standardized interfaces that allowed third-party applications to interact consistently with the system.</p>
-<p>At the same time, programming languages shipped with <strong>standard libraries</strong>, offering reusable functions that further reinforced API-driven development.</p>
-<pre class="hljs"><code><span class="hljs-comment">// Example: C standard library usage</span>
-<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Hello, world!&quot;</span>);
-</code></pre>
-<hr>
-<h2 id="object-oriented-and-enterprise-apis-1990s">Object-Oriented and Enterprise APIs (1990s)</h2>
-<p>The adoption of object-oriented programming expanded APIs beyond simple functions to include classes, methods, and interfaces. Languages such as Java popularized large, well-documented API ecosystems.</p>
-<p>Enterprise technologies like COM, CORBA, and later Java EE enabled large-scale system integration across distributed environments.</p>
-<div class="docmd-container callout callout-tip"><div class="callout-title">"Why this mattered"</div><div class="callout-content">
-<p>Reusable APIs reduced duplication and made large systems easier to maintain.</p>
-</div></div>
-<hr>
-<h2 id="the-rise-of-web-apis-2000s">The Rise of Web APIs (2000s)</h2>
-<p>The internet transformed APIs into platform-independent communication tools. Web APIs allowed systems written in different languages to communicate over HTTP.</p>
-<p>A major milestone occurred in 2000 when <strong>Roy Fielding</strong> introduced REST (Representational State Transfer) in his doctoral dissertation. REST defined principles such as statelessness, resource-based URLs, and standard HTTP methods.</p>
-<div class="docmd-tabs">
-<div class="docmd-tabs-nav"><div class="docmd-tabs-nav-item active">REST Example</div><div class="docmd-tabs-nav-item ">Response (JSON)</div></div><div class="docmd-tabs-content"><div class="docmd-tab-pane active"><pre class="hljs"><code><span class="hljs-keyword">GET</span> <span class="hljs-string">/users/123</span> <span class="hljs-meta">HTTP/1.1</span>
-<span class="hljs-attribute">Host</span><span class="hljs-punctuation">: </span>api.example.com
-</code></pre>
-</div><div class="docmd-tab-pane "><pre class="hljs"><code><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">&quot;id&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">123</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Alice&quot;</span>
-<span class="hljs-punctuation">}</span>
-</code></pre>
-</div></div></div><hr>
-<h2 id="modern-apis-and-cloud-computing-2010spresent">Modern APIs and Cloud Computing (2010s–Present)</h2>
-<p>Today, APIs power cloud platforms, mobile applications, and microservices architectures. Companies expose public APIs to enable integrations, while internal APIs support scalable distributed systems.</p>
-<p>Modern API styles include:</p>
+                    <h1 id="branches-and-merging-working-safely-with-changes">Branches and Merging (Working Safely with Changes)</h1>
+<p>Branches and merging are two of the most powerful ideas in Git, but they can be explained in simple terms.</p>
 <ul>
-<li>REST APIs</li>
-<li>GraphQL APIs</li>
-<li>Event-driven and streaming APIs</li>
+<li>A <strong>branch</strong> is like a <strong>separate copy of your project’s timeline</strong>.</li>
+<li><strong>Merging</strong> is how you <strong>bring changes from one branch into another</strong>.</li>
 </ul>
-<div class="mermaid">graph LR;
-    Client --> API;
-    API --> ServiceA;
-    API --> ServiceB;
-</div><hr>
-<h2 id="why-apis-matter-today">Why APIs Matter Today</h2>
-<div class="docmd-container callout callout-success"><div class="callout-title">"Strategic Importance"</div><div class="callout-content">
-<p>APIs are no longer just technical tools—they are products, platforms, and business enablers.</p>
-</div></div>
-<p>APIs enable faster development, cross-platform compatibility, and innovation by allowing teams to build on existing services instead of reinventing them.</p>
 <hr>
-<h2 id="conclusion">Conclusion</h2>
-<p>From early system calls to modern cloud-based services, APIs have evolved to meet the growing complexity of software systems. Their history reflects a continuous effort to improve abstraction, interoperability, and scalability in computing.</p>
-<hr>
-<h2 id="sources">Sources 📚</h2>
+<h2 id="simple-analogy-writing-a-book-with-drafts">Simple Analogy: Writing a Book with Drafts</h2>
+<p>Imagine you and your team are writing a book:</p>
+<ul>
+<li>The <strong>main branch</strong> (<code>main</code>) is the official book everyone trusts.</li>
+<li>You want to try a <strong>new chapter</strong>, but you are not sure if it will be good.</li>
+</ul>
+<p>Instead of editing the official book directly, you:</p>
 <ol>
-<li>Fielding, R. T. (2000). <em>Architectural Styles and the Design of Network-based Software Architectures</em>. University of California, Irvine.</li>
-<li>Bloch, J. (2006). <em>How to Design a Good API and Why It Matters</em>. ACM.</li>
-<li>Tanenbaum, A. S., &amp; Bos, H. (2015). <em>Modern Operating Systems</em> (4th ed.). Pearson.</li>
-<li>IBM Documentation – <em>API Concepts and History</em>.</li>
-<li>Red Hat – <em>What is an API?</em></li>
+<li>Make a <strong>copy</strong> of the book for experimentation — this is your <strong>feature branch</strong>.</li>
+<li>Edit the copy safely.</li>
+<li>If everyone likes your changes, you <strong>merge</strong> them back into the official book.</li>
 </ol>
+<p>This is exactly what branches and merging do for code.</p>
+<hr>
+<h2 id="what-is-a-branch">What Is a Branch?</h2>
+<p>A branch in Git:</p>
+<ul>
+<li>Has its own <strong>history of commits</strong></li>
+<li>Starts from another branch (usually <code>main</code>)</li>
+<li>Lets you work on changes <strong>without affecting</strong> the original branch</li>
+</ul>
+<p>By default, your project has a main branch called <code>main</code> (or sometimes <code>master</code>).</p>
+<p>Here is a picture of a simple branching timeline:</p>
+<div class="mermaid">gitGraph
+  commit id: "Start on main"
+  commit id: "More changes on main"
+  branch feature/login-page
+  checkout feature/login-page
+  commit id: "Work on login page"
+  commit id: "More login improvements"
+  checkout main
+  commit id: "Hotfix on main"
+</div><hr>
+<h2 id="checking-your-current-branch">Checking Your Current Branch</h2>
+<p>To see which branch you are on:</p>
+<pre class="hljs"><code>git status
+</code></pre>
+<p>You will see something like:</p>
+<pre class="hljs"><code>On branch main
+</code></pre>
+<p>Here, <code>main</code> is the current branch.</p>
+<hr>
+<h2 id="creating-a-new-branch">Creating a New Branch</h2>
+<p>To create a new branch, for example for a login feature, run:</p>
+<pre class="hljs"><code>git checkout -b feature/login-page
+</code></pre>
+<p>This does two things:</p>
+<ol>
+<li><strong>Creates</strong> a new branch called <code>feature/login-page</code></li>
+<li><strong>Switches</strong> you to that branch</li>
+</ol>
+<p>Now any changes and commits you make are part of this new branch, not <code>main</code>.</p>
+<hr>
+<h2 id="switching-between-branches">Switching Between Branches</h2>
+<p>To switch back to the <code>main</code> branch:</p>
+<pre class="hljs"><code>git checkout main
+</code></pre>
+<p>To switch again to your feature branch:</p>
+<pre class="hljs"><code>git checkout feature/login-page
+</code></pre>
+<p><strong>Important:</strong><br>
+You should commit or stash your changes before switching branches, otherwise Git may stop you to avoid losing work.</p>
+<hr>
+<h2 id="typical-workflow-with-a-feature-branch">Typical Workflow with a Feature Branch</h2>
+<p>Here’s a common flow:</p>
+<pre class="hljs"><code><span class="hljs-comment"># 1. Make sure main is up to date</span>
+git checkout main
+git pull
+
+<span class="hljs-comment"># 2. Create and switch to a new branch</span>
+git checkout -b feature/login-page
+
+<span class="hljs-comment"># 3. Make changes to files (in your editor)</span>
+
+<span class="hljs-comment"># 4. Stage and commit your changes</span>
+git add .
+git commit -m <span class="hljs-string">&quot;Add basic login page layout&quot;</span>
+
+<span class="hljs-comment"># 5. Push your branch to the remote</span>
+git push -u origin feature/login-page
+</code></pre>
+<p>Now your teammates can see your branch and review it (often via a pull request or merge request).</p>
+<hr>
+<h2 id="what-is-merging">What Is Merging?</h2>
+<p><strong>Merging</strong> means <strong>combining the history of one branch into another</strong>.</p>
+<p>Example:</p>
+<ul>
+<li>You worked on <code>feature/login-page</code></li>
+<li>You want to bring those changes into <code>main</code></li>
+</ul>
+<p>You will:</p>
+<ol>
+<li>Go to the branch that should receive the changes (for example, <code>main</code>)</li>
+<li>Run <code>git merge</code> with the name of the other branch</li>
+</ol>
+<p>Visually, a merge brings two lines of work back together:</p>
+<div class="mermaid">gitGraph
+  commit id: "Start on main"
+  branch feature/login-page
+  checkout feature/login-page
+  commit id: "Login page work"
+  checkout main
+  commit id: "Other main work"
+  merge feature/login-page id: "Merge feature into main"
+</div><hr>
+<h2 id="merging-a-branch-locally">Merging a Branch Locally</h2>
+<p>Example of merging <code>feature/login-page</code> into <code>main</code>:</p>
+<pre class="hljs"><code><span class="hljs-comment"># 1. Switch to main</span>
+git checkout main
+
+<span class="hljs-comment"># 2. Make sure main is up to date</span>
+git pull
+
+<span class="hljs-comment"># 3. Merge the feature branch into main</span>
+git merge feature/login-page
+</code></pre>
+<p>If Git can combine everything automatically, you will see a success message.<br>
+Then you can push the updated <code>main</code> to the remote:</p>
+<pre class="hljs"><code>git push
+</code></pre>
+<hr>
+<h2 id="fast-forward-vs-merge-commit-simple-view">Fast-Forward vs Merge Commit (Simple View)</h2>
+<p>You might see terms like:</p>
+<ul>
+<li><strong>Fast-forward</strong></li>
+<li><strong>Merge commit</strong></li>
+</ul>
+<p>You do not need to know all the internals, but here is a simple explanation:</p>
+<ul>
+<li><p><strong>Fast-forward</strong>:<br>
+<code>main</code> had no new commits, so Git just <strong>moves the pointer forward</strong> to include your feature branch. This is the simplest case.</p>
+</li>
+<li><p><strong>Merge commit</strong>:<br>
+Both <code>main</code> and your feature branch had new commits. Git creates a <strong>new commit</strong> that joins both histories.</p>
+</li>
+</ul>
+<p>In both cases, the end result is:<br>
+<code>main</code> now includes the changes from <code>feature/login-page</code>.</p>
+<hr>
+<h2 id="when-merging-causes-conflicts">When Merging Causes Conflicts</h2>
+<p>Conflicts happen when:</p>
+<ul>
+<li>Two branches changed the <strong>same lines in the same file</strong></li>
+</ul>
+<p>Example:</p>
+<ul>
+<li>On <code>main</code>, someone changes the title in <code>home-page.md</code>.</li>
+<li>On your <code>feature</code> branch, you change that same title in a different way.</li>
+</ul>
+<p>When you try to merge, Git cannot choose which version is correct.</p>
+<p>You will see conflict markers like:</p>
+<pre class="hljs"><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+Title from the branch you are merging into (for example, main)
+=======
+Title from the branch you are merging (for example, feature/login-page)
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; feature/login-page
+</code></pre>
+<p>To resolve:</p>
+<ol>
+<li>Open the file in your editor</li>
+<li>Decide which text to keep (or combine both)</li>
+<li>Remove the <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>, and <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code> lines</li>
+<li>Save the file</li>
+<li>Stage and commit the resolution:</li>
+</ol>
+<pre class="hljs"><code>git add home-page.md
+git commit -m <span class="hljs-string">&quot;Resolve merge conflict in home-page title&quot;</span>
+</code></pre>
+<p>After this, the merge is complete.</p>
+<hr>
+<h2 id="everyday-example-branch-and-merge">Everyday Example: Branch and Merge</h2>
+<p>Scenario:</p>
+<ul>
+<li>The team uses the <code>main</code> branch for production</li>
+<li>You need to add FAQ content on the website</li>
+</ul>
+<p>Steps:</p>
+<pre class="hljs"><code><span class="hljs-comment"># Start from the latest main</span>
+git checkout main
+git pull
+
+<span class="hljs-comment"># Create a new branch for the FAQ work</span>
+git checkout -b feature/add-faq-section
+
+<span class="hljs-comment"># Edit files (for example, faq.md) in your editor</span>
+
+<span class="hljs-comment"># Save and commit your changes</span>
+git add faq.md
+git commit -m <span class="hljs-string">&quot;Add FAQ section for common customer questions&quot;</span>
+
+<span class="hljs-comment"># Push the branch</span>
+git push -u origin feature/add-faq-section
+
+<span class="hljs-comment"># (Optionally) Open a Pull Request / Merge Request in your Git platform</span>
+
+<span class="hljs-comment"># After review and approval, merge into main (could be done via the platform or locally)</span>
+git checkout main
+git pull
+git merge feature/add-faq-section
+git push
+</code></pre>
+<p>This way:</p>
+<ul>
+<li><code>main</code> stays stable</li>
+<li>New work happens safely in branches</li>
+<li>Changes are combined in a controlled way</li>
+</ul>
 
 
                     
                     <div class="page-navigation">
                         
-                        <a href="../../api" class="prev-page">
+                        <a href="../../git/pulling-code" class="prev-page">
                             
 <svg class="lucide-icon icon-arrow-left page-nav-icon" width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
   class="lucide lucide-arrow-left"
@@ -891,31 +1035,10 @@
   <path d="M19 12H5" />
 </svg>
 
-                            <span><small>Previous</small><strong>API</strong></span>
+                            <span><small>Previous</small><strong>Pulling Code</strong></span>
                         </a>
                         
-                        
-                        <a href="../../git" class="next-page">
-                            <span><small>Next</small><strong>Git Basics</strong></span>
-                            
-<svg class="lucide-icon icon-arrow-right page-nav-icon" width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
-  class="lucide lucide-arrow-right"
-  xmlns="http://www.w3.org/2000/svg"
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M5 12h14" />
-  <path d="m12 5 7 7-7 7" />
-</svg>
-
-                        </a>
-                        
+                        <div class="next-page-placeholder"></div>
                     </div>
                     
                 </div>
@@ -945,35 +1068,47 @@
     <ul class="toc-list">
       
         <li class="toc-item toc-level-2">
-          <a href="#early-foundations-1960s1970s" class="toc-link">Early Foundations (1960s–1970s)</a>
+          <a href="#simple-analogy-writing-a-book-with-drafts" class="toc-link">Simple Analogy: Writing a Book with Drafts</a>
         </li>
       
         <li class="toc-item toc-level-2">
-          <a href="#library-and-os-apis-1980s" class="toc-link">Library and OS APIs (1980s)</a>
+          <a href="#what-is-a-branch" class="toc-link">What Is a Branch?</a>
         </li>
       
         <li class="toc-item toc-level-2">
-          <a href="#object-oriented-and-enterprise-apis-1990s" class="toc-link">Object-Oriented and Enterprise APIs (1990s)</a>
+          <a href="#checking-your-current-branch" class="toc-link">Checking Your Current Branch</a>
         </li>
       
         <li class="toc-item toc-level-2">
-          <a href="#the-rise-of-web-apis-2000s" class="toc-link">The Rise of Web APIs (2000s)</a>
+          <a href="#creating-a-new-branch" class="toc-link">Creating a New Branch</a>
         </li>
       
         <li class="toc-item toc-level-2">
-          <a href="#modern-apis-and-cloud-computing-2010spresent" class="toc-link">Modern APIs and Cloud Computing (2010s–Present)</a>
+          <a href="#switching-between-branches" class="toc-link">Switching Between Branches</a>
         </li>
       
         <li class="toc-item toc-level-2">
-          <a href="#why-apis-matter-today" class="toc-link">Why APIs Matter Today</a>
+          <a href="#typical-workflow-with-a-feature-branch" class="toc-link">Typical Workflow with a Feature Branch</a>
         </li>
       
         <li class="toc-item toc-level-2">
-          <a href="#conclusion" class="toc-link">Conclusion</a>
+          <a href="#what-is-merging" class="toc-link">What Is Merging?</a>
         </li>
       
         <li class="toc-item toc-level-2">
-          <a href="#sources" class="toc-link">Sources 📚</a>
+          <a href="#merging-a-branch-locally" class="toc-link">Merging a Branch Locally</a>
+        </li>
+      
+        <li class="toc-item toc-level-2">
+          <a href="#fast-forward-vs-merge-commit-simple-view" class="toc-link">Fast-Forward vs Merge Commit (Simple View)</a>
+        </li>
+      
+        <li class="toc-item toc-level-2">
+          <a href="#when-merging-causes-conflicts" class="toc-link">When Merging Causes Conflicts</a>
+        </li>
+      
+        <li class="toc-item toc-level-2">
+          <a href="#everyday-example-branch-and-merge" class="toc-link">Everyday Example: Branch and Merge</a>
         </li>
       
     </ul>

@@ -22,7 +22,7 @@
         window.DOCMD_DEFAULT_MODE = "system";
     </script>
 
-    <title>History of APIs</title>
+    <title>Git Terms Glossary (Plain Language)</title>
 
     <!-- Favicon -->
     <link rel="icon" href="../../assets/favicon.ico?v=mm50tulb" type="image/x-icon" sizes="any">
@@ -46,15 +46,15 @@
 
     <!-- 3. PLUGINS & THEMES (Overrides Core) -->
     <!-- This includes 'docmd-theme-sky.css' injected by build.js -->
-    <meta name="description" content="An overview of the evolution of Application Programming Interfaces from early computing to modern web APIs.">
-<link rel="canonical" href="/api\history-of-apis/">
-<meta property="og:title" content="History of APIs : My Documentation">
-<meta property="og:description" content="An overview of the evolution of Application Programming Interfaces from early computing to modern web APIs.">
-<meta property="og:url" content="/api\history-of-apis/">
+    <meta name="description" content="Simple explanations of common Git words and phrases for non-technical users.">
+<link rel="canonical" href="/git\git-terms-glossary/">
+<meta property="og:title" content="Git Terms Glossary (Plain Language) : My Documentation">
+<meta property="og:description" content="Simple explanations of common Git words and phrases for non-technical users.">
+<meta property="og:url" content="/git\git-terms-glossary/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="History of APIs">
-<meta name="twitter:description" content="An overview of the evolution of Application Programming Interfaces from early computing to modern web APIs.">
+<meta name="twitter:title" content="Git Terms Glossary (Plain Language)">
+<meta name="twitter:description" content="Simple explanations of common Git words and phrases for non-technical users.">
 
 
     <!-- GA4 -->
@@ -187,7 +187,7 @@
       
     </li>
     
-    <li class="active-parent collapsible expanded"  aria-expanded="true" >
+    <li class="collapsible"  aria-expanded="false" >
       <a href="../../api" class="" >
          
 <svg class="lucide-icon icon-arrow-left-right " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
@@ -237,8 +237,8 @@
       
         <ul class="submenu">
           
-    <li class="active" >
-      <a href="../../api/history-of-apis" class="active" >
+    <li class="" >
+      <a href="../../api/history-of-apis" class="" >
          
 <svg class="lucide-icon icon-history " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
   class="lucide lucide-history"
@@ -271,7 +271,7 @@
       
     </li>
     
-    <li class="collapsible"  aria-expanded="false" >
+    <li class="active-parent collapsible expanded"  aria-expanded="true" >
       <a href="../../git" class="" >
          
 <svg class="lucide-icon icon-git-branch " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
@@ -321,8 +321,8 @@
       
         <ul class="submenu">
           
-    <li class="" >
-      <a href="../../git/git-terms-glossary" class="" >
+    <li class="active" >
+      <a href="../../git/git-terms-glossary" class="active" >
          
 <svg class="lucide-icon icon-book " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
   class="lucide lucide-book"
@@ -716,7 +716,7 @@
 
                 </button>
                 
-                <h1>History of APIs</h1>
+                <h1>Git Terms Glossary (Plain Language)</h1>
             </div>
             
             <div class="header-right">
@@ -798,82 +798,218 @@
         <main class="content-area" id="main-content">
             <div class="content-layout">
                 <div class="main-content">
-                    <h1 id="history-of-apis">History of APIs 📜</h1>
-<p>Application Programming Interfaces (APIs) are a foundational concept in modern software development. While they are often associated with web services and cloud platforms today, APIs have a much longer history that parallels the evolution of computing itself.</p>
-<div class="docmd-container callout callout-info"><div class="callout-title">"What is an API?"</div><div class="callout-content">
-<p>An API defines how different software components communicate with each other using well-defined rules and interfaces.</p>
-</div></div>
+                    <h1 id="git-terms-glossary-plain-language">Git Terms Glossary (Plain Language)</h1>
+<p>This page explains common Git words in <strong>simple, non-technical language</strong>.<br>
+Use it as a quick reference when you see unfamiliar terms in tools like GitHub, GitLab, or your terminal.</p>
 <hr>
-<h2 id="early-foundations-1960s1970s">Early Foundations (1960s–1970s)</h2>
-<p>In the earliest days of computing, programs were tightly coupled to hardware. As operating systems matured, <strong>system calls</strong> emerged as a structured way for applications to request services such as memory allocation, file access, and process control.</p>
-<p>These system calls are considered the earliest form of APIs. They introduced the idea of abstraction—allowing developers to use system functionality without knowing internal implementation details.</p>
-<div class="docmd-container card"><div class="card-title">"Key Concept"</div><div class="card-content">
-<p><strong>Abstraction</strong> allows software to evolve independently from the hardware it runs on.</p>
-</div></div>
-<hr>
-<h2 id="library-and-os-apis-1980s">Library and OS APIs (1980s)</h2>
-<p>With the rise of personal computers, operating systems began exposing richer APIs to developers. Platforms such as UNIX and Microsoft Windows provided standardized interfaces that allowed third-party applications to interact consistently with the system.</p>
-<p>At the same time, programming languages shipped with <strong>standard libraries</strong>, offering reusable functions that further reinforced API-driven development.</p>
-<pre class="hljs"><code><span class="hljs-comment">// Example: C standard library usage</span>
-<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Hello, world!&quot;</span>);
-</code></pre>
-<hr>
-<h2 id="object-oriented-and-enterprise-apis-1990s">Object-Oriented and Enterprise APIs (1990s)</h2>
-<p>The adoption of object-oriented programming expanded APIs beyond simple functions to include classes, methods, and interfaces. Languages such as Java popularized large, well-documented API ecosystems.</p>
-<p>Enterprise technologies like COM, CORBA, and later Java EE enabled large-scale system integration across distributed environments.</p>
-<div class="docmd-container callout callout-tip"><div class="callout-title">"Why this mattered"</div><div class="callout-content">
-<p>Reusable APIs reduced duplication and made large systems easier to maintain.</p>
-</div></div>
-<hr>
-<h2 id="the-rise-of-web-apis-2000s">The Rise of Web APIs (2000s)</h2>
-<p>The internet transformed APIs into platform-independent communication tools. Web APIs allowed systems written in different languages to communicate over HTTP.</p>
-<p>A major milestone occurred in 2000 when <strong>Roy Fielding</strong> introduced REST (Representational State Transfer) in his doctoral dissertation. REST defined principles such as statelessness, resource-based URLs, and standard HTTP methods.</p>
-<div class="docmd-tabs">
-<div class="docmd-tabs-nav"><div class="docmd-tabs-nav-item active">REST Example</div><div class="docmd-tabs-nav-item ">Response (JSON)</div></div><div class="docmd-tabs-content"><div class="docmd-tab-pane active"><pre class="hljs"><code><span class="hljs-keyword">GET</span> <span class="hljs-string">/users/123</span> <span class="hljs-meta">HTTP/1.1</span>
-<span class="hljs-attribute">Host</span><span class="hljs-punctuation">: </span>api.example.com
-</code></pre>
-</div><div class="docmd-tab-pane "><pre class="hljs"><code><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">&quot;id&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">123</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Alice&quot;</span>
-<span class="hljs-punctuation">}</span>
-</code></pre>
-</div></div></div><hr>
-<h2 id="modern-apis-and-cloud-computing-2010spresent">Modern APIs and Cloud Computing (2010s–Present)</h2>
-<p>Today, APIs power cloud platforms, mobile applications, and microservices architectures. Companies expose public APIs to enable integrations, while internal APIs support scalable distributed systems.</p>
-<p>Modern API styles include:</p>
+<h2 id="repository-repo">Repository (Repo)</h2>
+<p><strong>What it means:</strong><br>
+A <strong>repository</strong> (or <strong>repo</strong>) is the <strong>project folder that Git is watching</strong>.</p>
+<p>It contains:</p>
 <ul>
-<li>REST APIs</li>
-<li>GraphQL APIs</li>
-<li>Event-driven and streaming APIs</li>
+<li>Your files and folders</li>
+<li>The history of changes (commits)</li>
+<li>Branches and other Git data</li>
 </ul>
+<p><strong>Analogy:</strong><br>
+Think of a repo as a <strong>project binder</strong> that holds all versions of your document, not just the latest one.</p>
+<hr>
+<h2 id="local-vs-remote">Local vs Remote</h2>
+<p><strong>Local repository:</strong><br>
+The copy of the Git project on <strong>your own computer</strong>.</p>
+<p><strong>Remote repository:</strong><br>
+The copy of the Git project on a <strong>server</strong> (for example on GitHub, GitLab, or Bitbucket).</p>
+<p><strong>Analogy:</strong><br>
+Local = files on your laptop.<br>
+Remote = files stored in your team’s shared cloud drive.</p>
+<p>You can think of the relationship like this:</p>
 <div class="mermaid">graph LR;
-    Client --> API;
-    API --> ServiceA;
-    API --> ServiceB;
+  Local["Local repo<br/>(your computer)"]
+  Remote["Remote repo<br/>(server / cloud)"]
+
+  Local -->|"push (send changes)"| Remote
+  Remote -->|"pull (get changes)"| Local
 </div><hr>
-<h2 id="why-apis-matter-today">Why APIs Matter Today</h2>
-<div class="docmd-container callout callout-success"><div class="callout-title">"Strategic Importance"</div><div class="callout-content">
-<p>APIs are no longer just technical tools—they are products, platforms, and business enablers.</p>
-</div></div>
-<p>APIs enable faster development, cross-platform compatibility, and innovation by allowing teams to build on existing services instead of reinventing them.</p>
+<h2 id="clone">Clone</h2>
+<p><strong>What it means:</strong><br>
+To <strong>download a full copy of a remote repository to your local computer</strong>.</p>
+<p>Command example:</p>
+<pre class="hljs"><code>git <span class="hljs-built_in">clone</span> https://github.com/company/project.git
+</code></pre>
+<p><strong>Analogy:</strong><br>
+Like saving a shared online folder to your own computer for the first time.</p>
 <hr>
-<h2 id="conclusion">Conclusion</h2>
-<p>From early system calls to modern cloud-based services, APIs have evolved to meet the growing complexity of software systems. Their history reflects a continuous effort to improve abstraction, interoperability, and scalability in computing.</p>
+<h2 id="commit">Commit</h2>
+<p><strong>What it means:</strong><br>
+A <strong>commit</strong> is a <strong>saved snapshot</strong> of your project at a point in time, with a message describing what changed.</p>
+<p>Command example:</p>
+<pre class="hljs"><code>git commit -m <span class="hljs-string">&quot;Fix typo on home page&quot;</span>
+</code></pre>
+<p><strong>Analogy:</strong><br>
+Like clicking “Save a version” in a document editor and writing a short note about what you changed.</p>
 <hr>
-<h2 id="sources">Sources 📚</h2>
-<ol>
-<li>Fielding, R. T. (2000). <em>Architectural Styles and the Design of Network-based Software Architectures</em>. University of California, Irvine.</li>
-<li>Bloch, J. (2006). <em>How to Design a Good API and Why It Matters</em>. ACM.</li>
-<li>Tanenbaum, A. S., &amp; Bos, H. (2015). <em>Modern Operating Systems</em> (4th ed.). Pearson.</li>
-<li>IBM Documentation – <em>API Concepts and History</em>.</li>
-<li>Red Hat – <em>What is an API?</em></li>
-</ol>
+<h2 id="commit-message">Commit Message</h2>
+<p><strong>What it means:</strong><br>
+The short description you write when making a commit.</p>
+<p>Good commit messages are:</p>
+<ul>
+<li>Clear</li>
+<li>Short</li>
+<li>Specific</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li><code>&quot;Update footer copyright year&quot;</code></li>
+<li><code>&quot;Add checkout button to cart page&quot;</code></li>
+</ul>
+<hr>
+<h2 id="branch">Branch</h2>
+<p><strong>What it means:</strong><br>
+A <strong>branch</strong> is a <strong>separate line of work</strong> in the same repository.</p>
+<p>Each branch can have:</p>
+<ul>
+<li>Its own commits</li>
+<li>Its own changes</li>
+</ul>
+<p>Common branch names:</p>
+<ul>
+<li><code>main</code> (or <code>master</code>) – the main, stable branch</li>
+<li><code>feature/login-page</code> – a branch to build a new login page</li>
+</ul>
+<p><strong>Analogy:</strong><br>
+Like making a copy of a document so you can try changes without touching the original.</p>
+<hr>
+<h2 id="main-or-master-branch">Main (or Master) Branch</h2>
+<p><strong>What it means:</strong><br>
+The <strong>primary branch</strong> of a project where the <strong>most stable</strong> version of the code lives.</p>
+<p>Teams often:</p>
+<ul>
+<li>Deploy from <code>main</code> to production</li>
+<li>Protect <code>main</code> with reviews and approvals</li>
+</ul>
+<hr>
+<h2 id="checkout">Checkout</h2>
+<p><strong>What it means:</strong><br>
+To <strong>switch to a different branch</strong> or <strong>move to a specific commit</strong>.</p>
+<p>Examples:</p>
+<pre class="hljs"><code>git checkout main
+git checkout feature/login-page
+</code></pre>
+<p><strong>Analogy:</strong><br>
+Like choosing which version of a document you want to open and edit.</p>
+<hr>
+<h2 id="remote-origin">Remote (Origin)</h2>
+<p><strong>What it means:</strong><br>
+A <strong>remote</strong> is a <strong>named connection</strong> to a repository on a server.</p>
+<p><code>origin</code> is the default name Git uses for the main remote repository.</p>
+<p>Example:</p>
+<pre class="hljs"><code>git push origin main
+</code></pre>
+<p>This means: push the <code>main</code> branch to the <code>origin</code> remote.</p>
+<hr>
+<h2 id="push">Push</h2>
+<p><strong>What it means:</strong><br>
+To <strong>send your local commits to the remote repository</strong>.</p>
+<p>Command:</p>
+<pre class="hljs"><code>git push
+</code></pre>
+<p><strong>Analogy:</strong><br>
+Like clicking “Upload” to send your updated document to a shared drive.</p>
+<p>See the <strong>Pushing Code</strong> page for step-by-step details.</p>
+<hr>
+<h2 id="pull">Pull</h2>
+<p><strong>What it means:</strong><br>
+To <strong>download and merge</strong> new commits from the remote repository to your local repository.</p>
+<p>Command:</p>
+<pre class="hljs"><code>git pull
+</code></pre>
+<p><strong>Analogy:</strong><br>
+Like clicking “Download latest version” of a shared document.</p>
+<p>See the <strong>Pulling Code</strong> page for more.</p>
+<hr>
+<h2 id="merge">Merge</h2>
+<p><strong>What it means:</strong><br>
+To <strong>combine the changes from one branch into another</strong>.</p>
+<p>Example:</p>
+<pre class="hljs"><code>git merge feature/login-page
+</code></pre>
+<p>This means: merge the <code>feature/login-page</code> branch into your current branch.</p>
+<p><strong>Analogy:</strong><br>
+Like taking edits from a draft copy and carefully adding them into the official document.</p>
+<hr>
+<h2 id="merge-conflict">Merge Conflict</h2>
+<p><strong>What it means:</strong><br>
+A situation where <strong>two branches changed the same part of the same file</strong>, and Git cannot decide which version to keep.</p>
+<p>Git marks the conflict and asks you to:</p>
+<ul>
+<li>Open the file</li>
+<li>Choose which changes to keep (or combine them)</li>
+<li>Save and commit the result</li>
+</ul>
+<p><strong>Analogy:</strong><br>
+Two people edit the same sentence in different ways.<br>
+Someone has to manually choose the final wording.</p>
+<hr>
+<h2 id="pull-request-merge-request-pr-mr">Pull Request / Merge Request (PR / MR)</h2>
+<p><strong>What it means:</strong><br>
+A <strong>pull request</strong> (GitHub) or <strong>merge request</strong> (GitLab, Bitbucket) is a <strong>formal request to merge one branch into another</strong>, usually with:</p>
+<ul>
+<li>A description of the change</li>
+<li>A place for comments</li>
+<li>Code review from teammates</li>
+</ul>
+<p><strong>Analogy:</strong><br>
+Like asking a colleague: “Please review my edits and, if you agree, add them to the official document.”</p>
+<hr>
+<h2 id="stash">Stash</h2>
+<p><strong>What it means:</strong><br>
+To <strong>temporarily set aside your unfinished changes</strong> without committing them, so you can switch branches or pull updates.</p>
+<p>Example:</p>
+<pre class="hljs"><code>git stash
+</code></pre>
+<p>Later you can bring those changes back with:</p>
+<pre class="hljs"><code>git stash pop
+</code></pre>
+<p><strong>Analogy:</strong><br>
+Putting your notes into a drawer for a moment so you can work on something else, then taking them back out later.</p>
+<hr>
+<h2 id="status">Status</h2>
+<p><strong>What it means:</strong><br>
+The current state of your working directory and staging area:</p>
+<ul>
+<li>Which files changed</li>
+<li>Which files are staged</li>
+<li>Which branch you are on</li>
+</ul>
+<p>Command:</p>
+<pre class="hljs"><code>git status
+</code></pre>
+<p>This is one of the safest and most helpful commands to run often.</p>
+<hr>
+<h2 id="log">Log</h2>
+<p><strong>What it means:</strong><br>
+The <strong>history of commits</strong> in your repository.</p>
+<p>Command:</p>
+<pre class="hljs"><code>git <span class="hljs-built_in">log</span>
+</code></pre>
+<p>This shows:</p>
+<ul>
+<li>Who made each commit</li>
+<li>When it was made</li>
+<li>The commit message</li>
+</ul>
+<p><strong>Analogy:</strong><br>
+Like a timeline or journal of all important changes to your project.</p>
+<hr>
+<h2 id="summary">Summary</h2>
+<p>You do not need to memorize all Git terms at once.<br>
+Keep this glossary open while you work, and refer back to it whenever you see a word you don’t understand.</p>
 
 
                     
                     <div class="page-navigation">
                         
-                        <a href="../../api" class="prev-page">
+                        <a href="../../git" class="prev-page">
                             
 <svg class="lucide-icon icon-arrow-left page-nav-icon" width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
   class="lucide lucide-arrow-left"
@@ -891,12 +1027,12 @@
   <path d="M19 12H5" />
 </svg>
 
-                            <span><small>Previous</small><strong>API</strong></span>
+                            <span><small>Previous</small><strong>Git Basics</strong></span>
                         </a>
                         
                         
-                        <a href="../../git" class="next-page">
-                            <span><small>Next</small><strong>Git Basics</strong></span>
+                        <a href="../../git/pushing-code" class="next-page">
+                            <span><small>Next</small><strong>Pushing Code</strong></span>
                             
 <svg class="lucide-icon icon-arrow-right page-nav-icon" width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
   class="lucide lucide-arrow-right"
@@ -945,35 +1081,75 @@
     <ul class="toc-list">
       
         <li class="toc-item toc-level-2">
-          <a href="#early-foundations-1960s1970s" class="toc-link">Early Foundations (1960s–1970s)</a>
+          <a href="#repository-repo" class="toc-link">Repository (Repo)</a>
         </li>
       
         <li class="toc-item toc-level-2">
-          <a href="#library-and-os-apis-1980s" class="toc-link">Library and OS APIs (1980s)</a>
+          <a href="#local-vs-remote" class="toc-link">Local vs Remote</a>
         </li>
       
         <li class="toc-item toc-level-2">
-          <a href="#object-oriented-and-enterprise-apis-1990s" class="toc-link">Object-Oriented and Enterprise APIs (1990s)</a>
+          <a href="#clone" class="toc-link">Clone</a>
         </li>
       
         <li class="toc-item toc-level-2">
-          <a href="#the-rise-of-web-apis-2000s" class="toc-link">The Rise of Web APIs (2000s)</a>
+          <a href="#commit" class="toc-link">Commit</a>
         </li>
       
         <li class="toc-item toc-level-2">
-          <a href="#modern-apis-and-cloud-computing-2010spresent" class="toc-link">Modern APIs and Cloud Computing (2010s–Present)</a>
+          <a href="#commit-message" class="toc-link">Commit Message</a>
         </li>
       
         <li class="toc-item toc-level-2">
-          <a href="#why-apis-matter-today" class="toc-link">Why APIs Matter Today</a>
+          <a href="#branch" class="toc-link">Branch</a>
         </li>
       
         <li class="toc-item toc-level-2">
-          <a href="#conclusion" class="toc-link">Conclusion</a>
+          <a href="#main-or-master-branch" class="toc-link">Main (or Master) Branch</a>
         </li>
       
         <li class="toc-item toc-level-2">
-          <a href="#sources" class="toc-link">Sources 📚</a>
+          <a href="#checkout" class="toc-link">Checkout</a>
+        </li>
+      
+        <li class="toc-item toc-level-2">
+          <a href="#remote-origin" class="toc-link">Remote (Origin)</a>
+        </li>
+      
+        <li class="toc-item toc-level-2">
+          <a href="#push" class="toc-link">Push</a>
+        </li>
+      
+        <li class="toc-item toc-level-2">
+          <a href="#pull" class="toc-link">Pull</a>
+        </li>
+      
+        <li class="toc-item toc-level-2">
+          <a href="#merge" class="toc-link">Merge</a>
+        </li>
+      
+        <li class="toc-item toc-level-2">
+          <a href="#merge-conflict" class="toc-link">Merge Conflict</a>
+        </li>
+      
+        <li class="toc-item toc-level-2">
+          <a href="#pull-request-merge-request-pr-mr" class="toc-link">Pull Request / Merge Request (PR / MR)</a>
+        </li>
+      
+        <li class="toc-item toc-level-2">
+          <a href="#stash" class="toc-link">Stash</a>
+        </li>
+      
+        <li class="toc-item toc-level-2">
+          <a href="#status" class="toc-link">Status</a>
+        </li>
+      
+        <li class="toc-item toc-level-2">
+          <a href="#log" class="toc-link">Log</a>
+        </li>
+      
+        <li class="toc-item toc-level-2">
+          <a href="#summary" class="toc-link">Summary</a>
         </li>
       
     </ul>
